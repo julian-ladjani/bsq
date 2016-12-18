@@ -8,7 +8,7 @@
 ## Last update Feb Dec 12 22:01:24 2016 Julian Ladjani
 ##
 
-CC 		=	gcc -Ofast
+CC 		=	gcc -Ofast -g
 
 SRC		=	src/main.c				\
 			src/fonc1.c				\
