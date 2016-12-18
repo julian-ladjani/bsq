@@ -5,17 +5,17 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Jul Dec 17 16:09:21 2016 Julian Ladjani
-** Last update Jan Dec 18 21:16:04 2016 Julian Ladjani
+** Last update Jan Dec 18 21:29:11 2016 Julian Ladjani
 */
 
 #ifndef MY_H_
 # define MY_H_
 
-#include <unistd.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <fcntl.h>
-#include <stdlib.h>
+# include <unistd.h>
+# include <sys/stat.h>
+# include <sys/types.h>
+# include <fcntl.h>
+# include <stdlib.h>
 
 typedef struct	s_square
 {
