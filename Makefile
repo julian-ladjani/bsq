@@ -13,6 +13,7 @@ CC 		=	gcc -Ofast
 SRC		=	src/main.c				\
 			src/fonc1.c				\
 			src/fonc2.c				\
+			src/fonc3.c				\
 
 OBJ		=	$(SRC:.c=.o)
 

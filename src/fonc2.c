@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Apr Dec 14 19:25:46 2016 Julian Ladjani
-** Last update Jul Dec 17 17:21:52 2016 Julian Ladjani
+** Last update Jan Dec 18 20:54:29 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -52,10 +52,8 @@ t_square	square_search(char **map, int row, int col, t_square square)
     {
       while (map[row][col + squaresize] != '\0')
 	{
-	  if ((squaresize = square_size(map, row, col, square.lenght - 1))
-	      > square.lenght ||
-	      (squaresize == square.lenght &&
-	       (col + row) < (square.posx - square.posy)))
+	  if ((squaresize = square_size(map, row, col, square.lenght))
+	      > square.lenght)
 	    {
 	      square.lenght = squaresize;
 	      square.posx = col;
@@ -66,7 +64,7 @@ t_square	square_search(char **map, int row, int col, t_square square)
       col = 0;
       row++;
     }
-  if (map[row + square.lenght -1] == NULL)
+  if (map[row + square.lenght - 1] == NULL)
     square.lenght--;
   return (square);
 }
@@ -80,7 +78,7 @@ char		**make_square(char **map)
   square.posx = 0;
   square.posy = 0;
   square.lenght = 0;
-  square = square_search(map, 0, 0, square);
+  square = square_fonc_red(map, square);
   rowbase = square.posy;
   colbase = square.posx;
   while (square.posy < (rowbase + square.lenght) && map[square.posy] != NULL)

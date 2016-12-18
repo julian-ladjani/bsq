@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Jul Dec 17 16:09:21 2016 Julian Ladjani
-** Last update Jul Dec 17 16:11:48 2016 Julian Ladjani
+** Last update Jan Dec 18 20:52:47 2016 Julian Ladjani
 */
 
 #ifndef MY_H_
@@ -26,7 +26,11 @@ typedef struct	s_square
 }		t_square;
 
 int		line_char(char *buffer);
-t_square	square_search(char **map, int row, int col, t_square square);
+t_square	square_search(char **map, int row,
+			      int col, t_square square);
+t_square	square_fonc_red(char **map, t_square square);
+t_square	search_oneline(char **map, t_square square);
+t_square	search_onecol(char **map, t_square square);
 t_square	prepare_struct(t_square square);
 void		write_it(char **map);
 int		check_firstline(char *buffer);
