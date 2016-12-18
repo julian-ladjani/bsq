@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Apr Dec 14 17:01:18 2016 Julian Ladjani
-** Last update Jul Dec 17 16:11:42 2016 Julian Ladjani
+** Last update Jan Dec 18 21:17:04 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -83,7 +83,7 @@ int		nb_col(char *buffer)
 	return (0);
       i += (nb + 1);
     }
-  return (nb_col);
+  return (nb);
 }
 
 char		**make_my_map(char *buffer)

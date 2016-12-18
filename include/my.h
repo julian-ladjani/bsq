@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Jul Dec 17 16:09:21 2016 Julian Ladjani
-** Last update Jan Dec 18 20:52:47 2016 Julian Ladjani
+** Last update Jan Dec 18 21:16:04 2016 Julian Ladjani
 */
 
 #ifndef MY_H_
@@ -38,5 +38,6 @@ int		my_get_firstline(char *buffer);
 int		nb_line(char *buffer);
 int		nb_col(char *buffer);
 char		**make_my_map(char *buffer);
+char		**make_square(char **map);
 
 #endif /* !MY_H_ */
